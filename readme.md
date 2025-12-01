@@ -12,3 +12,8 @@ https://svitlphoto.myportfolio.com/?fbclid=PAZnRzaAOCgflleHRuA2FlbQIxMQBzcnRjBmF
 
 
 https://vjbe.net/dev/photo_portfolio/# ahmed_photo
+
+https://www.instagram.com/sniper.shoots?igsh=ZGRnMnFtcDZ0ZXlm&utm_source=qr
+
+more inspo:
+https://www.justinetrickett.com/personal/
