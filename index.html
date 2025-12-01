@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Awad Photography</title>
+    <meta property="og:title" content="Ahmed Awad Photography" />
+    <meta
+      property="og:image"
+      content="https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/583884492_17853650556575704_2065999482263879189_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc2OTkzMDY0MTM1ODc2MDMyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=ieiaEOCALOcQ7kNvwE_R7Lh&_nc_oc=Adl_J29D0jsY43ZMSG638tYY9dXcSmcLL-7k1Lgm0NyoJKt3nDyQtNKfG7CyZQaayfI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=D39O486Swtn9HF0_f9eQMw&oh=00_Afmtvu2rWCjAa_zYb2stA48iHOiKdRB8K792hV72o9uKFA&oe=6933E862"
+    />
+    <meta
+      property="og:description"
+      content="Portrait, event, and documentary photography by Ahmed Abu Awad."
+    />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <h1>Ahmed Abu Awad Photography</h1>
-    <p class="tagline">Hi, I am Ahmed Abu Awad</p>
+    <p class="tagline">
+      I’m Ahmed, a Brussels-based photographer with a focus on portraits,
+      events, and documentary stories. I love capturing real, unscripted moments
+      and creating images that feel honest and alive.
+    </p>
+
+    <p class="tagline">
+      If you're organising an event or want to preserve a meaningful moment in
+      your life, I’m here to craft images that are genuine, expressive, and true
+      to who you are.
+    </p>
 
     <main>
       <h2>Portraits</h2>
@@ -85,10 +105,14 @@
       text-align: center;
     }
 
+    .clickable {
+      cursor: pointer;
+    }
+
     .image-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
+      gap: 0.35rem;
       max-width: 900px;
       margin: 0 auto;
     }
@@ -96,7 +120,7 @@
     .img-wrap {
       aspect-ratio: 1 / 1; /* or 4/3, 3/2, 16/9 — choose your preferred shape */
       overflow: hidden;
-      border-radius: 8px;
+      border-radius: 0;
     }
 
     .img-wrap img {
@@ -110,7 +134,6 @@
     }
     a {
       text-decoration: none;
-      color: black;
     }
 
     .button {
@@ -132,15 +155,22 @@
 
     .tagline {
       text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .tagline:last-of-type {
+      margin-bottom: 50px;
     }
 
     :root {
-      --bg: #050816;
-      --bg-elevated: #0b1020;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #93c5fd;
-      --border: #1f2933;
+      --bg: #111215;
+      --bg-elevated: #1a1b1f;
+      --text: #d6d7dc; /* soft grey, not pure white */
+      --muted: #8e8f95;
+      --accent: #a5c1ff; /* soft cool accent */
+      --border: #26272b;
     }
 
     body {
