@@ -57,12 +57,14 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
+              loading="lazy"
             />
           </div>
 
@@ -70,6 +72,7 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-8d4a71.webp"
+              loading="lazy"
             />
           </div>
 
@@ -77,18 +80,21 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-42e2e9.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-de988d.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-ed0b5f.webp"
+              loading="lazy"
             />
           </div>
 
@@ -96,6 +102,7 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-91731b.webp"
+              loading="lazy"
             />
           </div>
 
@@ -103,6 +110,7 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-7e3217.webp"
+              loading="lazy"
             />
           </div>
         </div>
@@ -135,60 +143,70 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-870a80.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-bee4ca.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-5cf5f8.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-1f5f65.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-5abb00.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-f58499.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-1599de.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-43e9cc.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-64cc13.webp"
+              loading="lazy"
             />
           </div>
           <div class="img-wrap">
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-3f1b08.webp"
+              loading="lazy"
             />
           </div>
         </div>
@@ -259,7 +277,7 @@
       gap: 10px;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-      position: relative;
+      width: 100vw;          /* full viewport width */
     }
 
     .img-wrap {
@@ -267,32 +285,9 @@
       overflow: hidden;
       border-radius: 0;
       width: fit-content;
-      min-width: 32.8%;
+      flex: 0 0 32.8%;
 
       scroll-snap-align: start;
-    }
-
-    .carousel::scroll-button(*) {
-      border: 0;
-      font-size: 2rem;
-      background: none;
-      color: black;
-      opacity: 0.7;
-      cursor: pointer;
-    }
-
-    .carousel::scroll-button(*):hover,
-    .carousel::scroll-button(*):focus {
-      opacity: 1;
-    }
-
-    .carousel::scroll-button(*):active {
-      translate: 1px 1px;
-    }
-
-    .carousel::scroll-button(*):disabled {
-      opacity: 0.2;
-      cursor: unset;
     }
 
     .img-wrap img {

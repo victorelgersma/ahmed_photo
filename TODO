@@ -1,8 +1,9 @@
 - [ ] add "events" photos to website
-- [ ] add them to the website
 - [ ] register ahmedabuawad-photo.eu.org
 - [ ] proper but cheap domain name? www.ahmed-awad.github.io
-- [ ] create a carousel
+- [x] create a carousel
+- [ ] optimize web bundle / request bundle
+- [ ] add them to the website
 - [x] download all the photos - convert and upload them 
 - [x] get the click on a photo to work
 - [x] convert them all to webp
