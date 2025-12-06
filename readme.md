@@ -1,7 +1,11 @@
 # ahmed photography portfolio 
 
-https://vjbe.net/dev/ahmed_photo_portfolio/photo_portfolio/
+All photos are here:
 
+https://vjbe.net/img/ahmed/
+
+
+https://vjbe.net/dev/ahmed_photo_portfolio/photo_portfolio/
 
 inspiration: 
 
