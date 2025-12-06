@@ -29,18 +29,23 @@
       Photography
     </h1>
     <p class="tagline">
-      Hi, I’m Ahmed, I was born in Gaza 1994. I live as a Brussels-based photographer with a focus on portraits, events, and documentary stories. I love capturing real, unscripted moments and creating images that feel honest and alive.
+      Hi, I’m Ahmed, I was born in Gaza 1994. I live as a Brussels-based
+      photographer with a focus on portraits, events, and documentary stories. I
+      love capturing real, unscripted moments and creating images that feel
+      honest and alive.
     </p>
     <br />
 
     <p class="tagline">
-     If you're organising an event or want to preserve a meaningful moment in your life, I’m here to craft images that are genuine, expressive, and true to who you are.
+      If you're organising an event or want to preserve a meaningful moment in
+      your life, I’m here to craft images that are genuine, expressive, and true
+      to who you are.
     </p>
 
     <main>
       <section class="lightbox">
         <h2>Portraits</h2>
-        <div class="image-grid">
+        <div class="image-grid carousel">
           <div class="img-wrap">
             <img
               class="clickable"
@@ -65,7 +70,6 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-8d4a71.webp"
-
             />
           </div>
 
@@ -92,7 +96,6 @@
             <img
               class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-91731b.webp"
-
             />
           </div>
 
@@ -252,18 +255,44 @@
     }
 
     .carousel {
-        width: 80%;
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory; 
-        position: relative;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      position: relative;
     }
 
     .img-wrap {
       aspect-ratio: 1 / 1; /* or 4/3, 3/2, 16/9 — choose your preferred shape */
       overflow: hidden;
       border-radius: 0;
+      width: fit-content;
+      min-width: 32.8%;
+
+      scroll-snap-align: start;
+    }
+
+    .carousel::scroll-button(*) {
+      border: 0;
+      font-size: 2rem;
+      background: none;
+      color: black;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .carousel::scroll-button(*):hover,
+    .carousel::scroll-button(*):focus {
+      opacity: 1;
+    }
+
+    .carousel::scroll-button(*):active {
+      translate: 1px 1px;
+    }
+
+    .carousel::scroll-button(*):disabled {
+      opacity: 0.2;
+      cursor: unset;
     }
 
     .img-wrap img {
