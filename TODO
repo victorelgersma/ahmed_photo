@@ -1,9 +1,14 @@
-- [ ] add "events" photos to website
 - [ ] register ahmedabuawad-photo.eu.org
+- [ ] register ahmedawad-photo.eu.org
 - [ ] proper but cheap domain name? www.ahmed-awad.github.io
-- [x] create a carousel
-- [ ] optimize web bundle / request bundle
+
 - [ ] add them to the website
+- [ ] add "events" photos to website
+- [ ] show how many photos are left in the carousel
+- [x] register https://ahmedawad-photo.netlify.app/
+- [x] create a carousel
+- [x] optimize web bundle / request bundle
 - [x] download all the photos - convert and upload them 
+- [x] fix layour shift
 - [x] get the click on a photo to work
 - [x] convert them all to webp

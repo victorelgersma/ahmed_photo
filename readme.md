@@ -1,9 +1,11 @@
 # ahmed photography portfolio 
 
+To deploy on https://ahmedawad-photo.netlify.app/ just push to main
+
+
 All photos are here:
 
 https://vjbe.net/img/ahmed/
-
 
 https://vjbe.net/dev/ahmed_photo_portfolio/photo_portfolio/
 
