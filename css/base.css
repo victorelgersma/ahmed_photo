@@ -30,6 +30,7 @@ h1 {
 .tagline {
   max-width: 640px;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 /* Image grid layout */
