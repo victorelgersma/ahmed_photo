@@ -5,7 +5,7 @@ All photos are here:
 https://vjbe.net/img/ahmed/
 
 
-https://vjbe.net/dev/ahmed_photo_portfolio/photo_portfolio/
+preview branch: https://vjbe.net/dev/ahmed_photo_portfolio/ahmed_photo_portfolio/
 
 inspiration: 
 

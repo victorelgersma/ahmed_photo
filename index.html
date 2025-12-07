@@ -4,37 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmed Awad Photography</title>
-    <meta property="og:title" content="Ahmed Awad Photography" />
-    <meta
-      property="og:image"
-      content="https://scontent-dus1-1.cdninstagram.com/v/t51.82787-15/583884492_17853650556575704_2065999482263879189_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzc2OTkzMDY0MTM1ODc2MDMyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=ieiaEOCALOcQ7kNvwE_R7Lh&_nc_oc=Adl_J29D0jsY43ZMSG638tYY9dXcSmcLL-7k1Lgm0NyoJKt3nDyQtNKfG7CyZQaayfI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dus1-1.cdninstagram.com&_nc_gid=D39O486Swtn9HF0_f9eQMw&oh=00_Afmtvu2rWCjAa_zYb2stA48iHOiKdRB8K792hV72o9uKFA&oe=6933E862"
-    />
-    <meta
-      property="og:description"
-      content="Portrait, event, and documentary photography by Ahmed Abu Awad."
-    />
-    <meta property="og:type" content="website" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-  <text y='0.9em' font-size='90'>📷</text>
-</svg>"
-    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/theme-dark.css" />
   </head>
 
   <body>
-    <h1>
-      Ahmed Abu Awad<br />
-      Photography
-    </h1>
+    <h1>Ahmed Abu Awad<br />Photography</h1>
+
     <p class="tagline">
-      Hi, I’m Ahmed, I was born in Gaza 1994. I live as a Brussels-based
+      Hi, I’m Ahmed. I was born in Gaza 1994. I live as a Brussels-based
       photographer with a focus on portraits, events, and documentary stories. I
       love capturing real, unscripted moments and creating images that feel
       honest and alive.
     </p>
-    <br />
 
     <p class="tagline">
       If you're organising an event or want to preserve a meaningful moment in
@@ -43,396 +25,145 @@
     </p>
 
     <main>
-      <section class="lightbox">
+      <!-- PORTRAITS (top 3, own gallery) -->
+
+      <section>
         <h2>Portraits</h2>
-        <div class="image-grid carousel">
-          <div class="img-wrap">
+        <div class="grid">
+          <div class="grid-item">
             <img
-              class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-02-e93ae0.webp"
+              class="thumb thumb-portraits"
+              alt="Portrait"
             />
           </div>
-
-          <div class="img-wrap">
+          <div class="grid-item">
             <img
-              class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
+              class="thumb thumb-portraits"
+              alt="Portrait"
             />
           </div>
-          <div class="img-wrap">
+          <div class="grid-item">
             <img
-              class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
+              class="thumb thumb-portraits"
+              alt="Portrait"
             />
           </div>
 
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-8d4a71.webp"
-            />
-          </div>
-
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-42e2e9.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-de988d.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-ed0b5f.webp"
-            />
-          </div>
-
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-91731b.webp"
-            />
-          </div>
-
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-7e3217.webp"
-            />
+          <!-- CTA AS GRID ITEM -->
+          <div class="grid-item grid-item-cta">
+            <a href="portraits.html" class="btn">More portraits</a>
           </div>
         </div>
       </section>
 
-      <section class="lightbox">
+      <!-- EVENTS (bottom 3, own gallery, low fetch priority) -->
+      <section>
         <h2>Events</h2>
-
-        <div class="image-grid carousel">
-          <div class="img-wrap">
+        <div class="grid">
+          <div class="grid-item">
             <img
-              class="clickable"
               src="https://vjbe.net/img/ahmed/2025-12-05-9ef7e9.webp"
+              class="thumb thumb-events"
+              alt="Event"
+              fetchpriority="low"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://vjbe.net/img/ahmed/2025-12-05-1cf891.webp"
+              class="thumb thumb-events"
+              alt="Event"
+              fetchpriority="low"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="https://vjbe.net/img/ahmed/2025-12-05-538caf.webp"
+              class="thumb thumb-events"
+              alt="Event"
+              fetchpriority="low"
             />
           </div>
 
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-1cf891.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-538caf.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-870a80.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-bee4ca.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-5cf5f8.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-1f5f65.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-5abb00.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-f58499.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-1599de.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-43e9cc.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-64cc13.webp"
-            />
-          </div>
-          <div class="img-wrap">
-            <img
-              class="clickable"
-              src="https://vjbe.net/img/ahmed/2025-12-05-3f1b08.webp"
-            />
+          <!-- CTA AS GRID ITEM -->
+          <div class="grid-item grid-item-cta">
+            <a href="events.html" class="btn">More events</a>
           </div>
         </div>
       </section>
-
-      <footer class="contact">
-        <p>Get in touch</p>
-        <p>
-          <a
-            href="https://www.instagram.com/sniper.shoots"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @sniper.shoots
-          </a>
-        </p>
-      </footer>
     </main>
-    <div id="imgModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modalImg" />
+
+    <!-- MODAL (reused for both galleries) -->
+    <div class="modal" id="modal">
+      <span class="close" id="closeModal">&times;</span>
+      <button class="nav prev" id="prevBtn">&#10094;</button>
+      <img id="modalImg" />
+      <button class="nav next" id="nextBtn">&#10095;</button>
     </div>
-  </body>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      font-weight: 100;
-    }
-    .lightbox h2 {
-      text-align: center;
-    }
 
-    .lightbox {
-      margin-top: 100px;
-    }
-    :root {
-      --bg: #0c0f14;
-      --bg-elevated: #161b22;
-      --text: #e2e8f0;
-      --text-muted: #94a3b8;
-      --accent: #8b9cfb;
-      --accent-hover: #a3b4ff;
-      --border: #1f2933;
-    }
+    <script>
+      const galleries = {
+        portraits: Array.from(document.querySelectorAll(".thumb-portraits")),
+        events: Array.from(document.querySelectorAll(".thumb-events")),
+      };
 
-    h1 {
-      font-size: 30px;
-      padding: 0.5em 1em;
-      text-align: center;
-    }
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+      const closeBtn = document.getElementById("closeModal");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
 
-    .clickable {
-      cursor: pointer;
-    }
+      let currentGalleryName = null;
+      let currentList = [];
+      let index = 0;
 
-    .image-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.35rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .carousel {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      position: relative;
-    }
-
-    .img-wrap {
-      aspect-ratio: 1 / 1; /* or 4/3, 3/2, 16/9 — choose your preferred shape */
-      overflow: hidden;
-      border-radius: 0;
-      width: fit-content;
-      min-width: 32.8%;
-
-      scroll-snap-align: start;
-    }
-
-    .carousel::scroll-button(*) {
-      border: 0;
-      font-size: 2rem;
-      background: none;
-      color: black;
-      opacity: 0.7;
-      cursor: pointer;
-    }
-
-    .carousel::scroll-button(*):hover,
-    .carousel::scroll-button(*):focus {
-      opacity: 1;
-    }
-
-    .carousel::scroll-button(*):active {
-      translate: 1px 1px;
-    }
-
-    .carousel::scroll-button(*):disabled {
-      opacity: 0.2;
-      cursor: unset;
-    }
-
-    .img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* key: crop the image, don’t distort */
-    }
-
-    img {
-      object-fit: cover;
-    }
-    a {
-      text-decoration: none;
-    }
-
-    .button {
-      padding: 1em 1em;
-      border: 2px solid white;
-      text-decoration: none;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .img_wrapper {
-      margin-bottom: 1px;
-    }
-
-    .tagline {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .tagline:first-of-type {
-      margin-top: 50px;
-    }
-
-    .tagline:last-of-type {
-      margin-bottom: 0px;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    /* Reuse variables everywhere */
-    a {
-      color: var(--accent);
-    }
-
-    .card {
-      background: var(--bg-elevated);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    small,
-    .muted {
-      color: var(--muted);
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 100;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    /* When active, show and center it */
-    .modal.open {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-content {
-      display: block;
-      margin: auto;
-      max-width: 90%;
-      max-height: 90%;
-    }
-
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      font-size: 40px;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    /* Get in touch */
-    .contact {
-      margin: 3rem 0 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .contact a {
-      color: var(--accent);
-    }
-  </style>
-  <script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImg");
-    const closeBtn = document.querySelector(".close");
-
-    document.querySelectorAll(".clickable").forEach((img) => {
-      img.addEventListener("click", () => {
-        modal.classList.add("open"); // show + center
-        modalImg.src = img.src;
-      });
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        modal.classList.remove("open");
+      function updateModalImage() {
+        if (!currentList.length) return;
+        modalImg.src = currentList[index].src;
       }
-    });
 
-    closeBtn.addEventListener("click", () => {
-      modal.classList.remove("open"); // show + center
-    });
+      function openModal(galleryName, i) {
+        currentGalleryName = galleryName;
+        currentList = galleries[galleryName];
+        index = i;
+        updateModalImage();
+        modal.classList.add("open");
+      }
 
-    modal.addEventListener("click", (e) => {
-      // allow clicking outside the image to close
-      if (e.target === modal) modal.classList.remove("open");
-    });
-  </script>
+      function show(delta) {
+        if (!currentList.length) return;
+        index = (index + delta + currentList.length) % currentList.length;
+        updateModalImage();
+      }
+
+      // bind portrait thumbnails
+      galleries.portraits.forEach((img, i) => {
+        img.addEventListener("click", () => openModal("portraits", i));
+      });
+
+      // bind event thumbnails
+      galleries.events.forEach((img, i) => {
+        img.addEventListener("click", () => openModal("events", i));
+      });
+
+      prevBtn.addEventListener("click", () => show(-1));
+      nextBtn.addEventListener("click", () => show(1));
+
+      closeBtn.addEventListener("click", () => modal.classList.remove("open"));
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.remove("open");
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!modal.classList.contains("open")) return;
+        if (e.key === "Escape") modal.classList.remove("open");
+        if (e.key === "ArrowRight") show(1);
+        if (e.key === "ArrowLeft") show(-1);
+      });
+    </script>
+  </body>
 </html>
