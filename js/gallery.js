@@ -1,46 +1,68 @@
-const imgs = Array.from(document.querySelectorAll(".gallery-img"));
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modalImg");
-const closeBtn = document.getElementById("closeModal");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+// modal.js — shared gallery modal for all pages
 
-let current = 0;
+(function () {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementById("closeModal");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
 
-function openModal(index) {
-  current = index;
-  modalImg.src = imgs[current].src;
-  modal.classList.add("open");
-  document.body.classList.add("noscroll");   // 🚫 disable scrolling
-}
+  if (!modal || !modalImg) return; // modal not present → nothing to do
 
-function closeModal() {
-  modal.classList.remove("open");
-  document.body.classList.remove("noscroll"); // ✅ re-enable scrolling
-}
+  // Collect all possible gallery selectors generically
+  const selectors = [
+    ".gallery-img",        // used on portraits.html / events.html
+    ".thumb-portraits",    // homepage portraits
+    ".thumb-events"        // homepage events
+  ];
 
-function show(delta) {
-  current = (current + delta + imgs.length) % imgs.length;
-  modalImg.src = imgs[current].src;
-}
+  const imgs = selectors.flatMap(sel =>
+    Array.from(document.querySelectorAll(sel))
+  );
 
-imgs.forEach((img, i) => {
-  img.addEventListener("click", () => openModal(i));
-});
+  if (!imgs.length) return; // no images → nothing to bind
 
-closeBtn.addEventListener("click", closeModal);
+  let index = 0;
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) closeModal();
-});
+  function openModal(i) {
+    index = i;
+    modalImg.src = imgs[index].src;
+    modal.classList.add("open");
+    document.body.classList.add("noscroll"); // lock scroll
+  }
 
-prevBtn.addEventListener("click", () => show(-1));
-nextBtn.addEventListener("click", () => show(1));
+  function closeModal() {
+    modal.classList.remove("open");
+    document.body.classList.remove("noscroll"); // unlock scroll
+  }
 
-document.addEventListener("keydown", (e) => {
-  if (!modal.classList.contains("open")) return;
+  function show(delta) {
+    index = (index + delta + imgs.length) % imgs.length;
+    modalImg.src = imgs[index].src;
+  }
 
-  if (e.key === "Escape") closeModal();
-  if (e.key === "ArrowRight") show(1);
-  if (e.key === "ArrowLeft") show(-1);
-});
+  // Bind click handlers
+  imgs.forEach((img, i) => {
+    img.addEventListener("click", () => openModal(i));
+  });
+
+  // Buttons
+  if (prevBtn) prevBtn.addEventListener("click", () => show(-1));
+  if (nextBtn) nextBtn.addEventListener("click", () => show(1));
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+
+  // Backdrop click
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Keyboard controls
+  document.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("open")) return;
+
+    if (e.key === "Escape") closeModal();
+    if (e.key === "ArrowRight") show(1);
+    if (e.key === "ArrowLeft") show(-1);
+  });
+
+})();

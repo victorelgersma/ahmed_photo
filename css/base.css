@@ -72,7 +72,6 @@ h1 {
   cursor: pointer;
 }
 
-
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -121,6 +120,15 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 1.2rem; /* increase clickable area */
+  width: 3.5rem; /* ensure a minimum hitbox size */
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%; /* optional: nicer look */
+  touch-action: manipulation;
 }
 
 .nav.prev {

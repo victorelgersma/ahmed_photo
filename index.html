@@ -6,6 +6,7 @@
     <title>Ahmed Awad Photography</title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/theme-dark.css" />
+    <script src="js/gallery.js" defer></script>
   </head>
 
   <body>
@@ -94,6 +95,32 @@
           </div>
         </div>
       </section>
+       <!-- NEW: contact section on the home page -->
+      <section id="contact">
+        <h2>Get in touch</h2>
+
+        <p>
+          E-Mail:
+          <a href="mailto:ahmedabuawad94@gmail.com"
+            >ahmedabuawad94@gmail.com</a
+          >
+        </p>
+
+        <p>
+          Phone number:
+          <a href="tel:+32466209361">+32 466 20 93 61</a>
+        </p>
+
+        <p>
+          Instagram:
+          <a
+            href="https://www.instagram.com/sniper.shoots"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@sniper.shoots</a
+          >
+        </p>
+      </section>
     </main>
 
     <!-- MODAL (reused for both galleries) -->
@@ -104,66 +131,5 @@
       <button class="nav next" id="nextBtn">&#10095;</button>
     </div>
 
-    <script>
-      const galleries = {
-        portraits: Array.from(document.querySelectorAll(".thumb-portraits")),
-        events: Array.from(document.querySelectorAll(".thumb-events")),
-      };
-
-      const modal = document.getElementById("modal");
-      const modalImg = document.getElementById("modalImg");
-      const closeBtn = document.getElementById("closeModal");
-      const prevBtn = document.getElementById("prevBtn");
-      const nextBtn = document.getElementById("nextBtn");
-
-      let currentGalleryName = null;
-      let currentList = [];
-      let index = 0;
-
-      function updateModalImage() {
-        if (!currentList.length) return;
-        modalImg.src = currentList[index].src;
-      }
-
-      function openModal(galleryName, i) {
-        currentGalleryName = galleryName;
-        currentList = galleries[galleryName];
-        index = i;
-        updateModalImage();
-        modal.classList.add("open");
-      }
-
-      function show(delta) {
-        if (!currentList.length) return;
-        index = (index + delta + currentList.length) % currentList.length;
-        updateModalImage();
-      }
-
-      // bind portrait thumbnails
-      galleries.portraits.forEach((img, i) => {
-        img.addEventListener("click", () => openModal("portraits", i));
-      });
-
-      // bind event thumbnails
-      galleries.events.forEach((img, i) => {
-        img.addEventListener("click", () => openModal("events", i));
-      });
-
-      prevBtn.addEventListener("click", () => show(-1));
-      nextBtn.addEventListener("click", () => show(1));
-
-      closeBtn.addEventListener("click", () => modal.classList.remove("open"));
-
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal) modal.classList.remove("open");
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (!modal.classList.contains("open")) return;
-        if (e.key === "Escape") modal.classList.remove("open");
-        if (e.key === "ArrowRight") show(1);
-        if (e.key === "ArrowLeft") show(-1);
-      });
-    </script>
   </body>
 </html>
