@@ -1,95 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portraits – Ahmed Awad Photography</title>
-    <script src="js/gallery.js" defer></script>
-    <link rel="stylesheet" href="css/gallery.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portraits – Ahmed Awad Photography</title>
+        <script src="js/gallery.js" defer></script>
+        <link rel="stylesheet" href="css/gallery.css" />
+        <link rel="stylesheet" href="css/base.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Portraits</h1>
+        </header>
 
-  </head>
-  <body>
-    <header>
-      <h1>Portraits</h1>
-      <a href="index.html" class="back">← Back to home</a>
-    </header>
+        <main>
+            <div class="grid">
+                <!-- just reuse the portrait URLs you already have -->
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-02-e93ae0.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-8d4a71.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-42e2e9.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-de988d.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-ed0b5f.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-91731b.webp"
+                        alt=""
+                    />
+                </div>
+                <div class="grid-item">
+                    <img
+                        class="gallery-img"
+                        src="https://vjbe.net/img/ahmed/2025-12-05-7e3217.webp"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </main>
 
-    <main>
-      <div class="grid">
-        <!-- just reuse the portrait URLs you already have -->
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-02-e93ae0.webp"
-            alt=""
-          />
+        <footer
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+            "
+        >
+            <a href="/" class="back">← Home</a>
+        </footer>
+        <div class="modal" id="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <button class="nav prev" id="prevBtn">&#10094;</button>
+            <img id="modalImg" />
+            <button class="nav next" id="nextBtn">&#10095;</button>
         </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-8d4a71.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-42e2e9.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-de988d.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-ed0b5f.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-91731b.webp"
-            alt=""
-          />
-        </div>
-        <div class="grid-item">
-          <img
-            class="gallery-img"
-            src="https://vjbe.net/img/ahmed/2025-12-05-7e3217.webp"
-            alt=""
-          />
-        </div>
-      </div>
-    </main>
 
-    <div class="modal" id="modal">
-      <span class="close" id="closeModal">&times;</span>
-      <button class="nav prev" id="prevBtn">&#10094;</button>
-      <img id="modalImg" />
-      <button class="nav next" id="nextBtn">&#10095;</button>
-    </div>
-
-    <script></script>
-  </body>
+        <script></script>
+    </body>
 </html>

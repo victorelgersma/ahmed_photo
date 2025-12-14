@@ -1,124 +1,128 @@
-      :root {
-        --bg: #0c0f14;
-        --text: #e2e8f0;
-        --text-muted: #94a3b8;
-        --accent: #8b9cfb;
-      }
+:root {
+    --bg: #0c0f14;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent: #8b9cfb;
+}
 
-      * {
-        box-sizing: border-box;
-      }
+* {
+    box-sizing: border-box;
+}
 
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-        background: var(--bg);
-        color: var(--text);
-      }
+body {
+    margin: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
 
-      body.noscroll {
-        overflow: hidden;
-        touch-action: none; /* Prevents touch scrolling on mobile */
-      }
+body.noscroll {
+    overflow: hidden;
+    touch-action: none; /* Prevents touch scrolling on mobile */
+}
 
-      header {
-        text-align: center;
-        padding: 1.5rem 1rem 1rem;
-      }
+header {
+    text-align: center;
+    padding: 1.5rem 1rem 1rem;
+}
 
-      h1 {
-        margin: 0;
-        font-size: 26px;
-      }
+h1 {
+    margin: 0;
+    font-size: 26px;
+}
 
-      a.back {
-        display: inline-block;
-        margin-top: 0.4rem;
-        font-size: 0.9rem;
-        color: var(--text-muted);
-        text-decoration: none;
-      }
+a.back {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-decoration: none;
+}
 
-      main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1rem;
-      }
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 0.4rem;
-      }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.4rem;
+}
 
-      .grid-item {
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-      }
+.grid-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
 
-      .grid-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        cursor: pointer;
-        display: block;
-      }
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
+}
 
-      .modal {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.9);
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
-      }
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
 
-      .modal.open {
-        display: flex;
-      }
+.modal.open {
+    display: flex;
+}
 
-      .modal img {
-        max-width: 90vw;
-        max-height: 90vh;
-        object-fit: contain;
-      }
+.modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
 
-      .modal .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 32px;
-        color: #fff;
-        cursor: pointer;
-      }
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
 
-      .nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2.4rem;
-        background: rgba(0, 0, 0, 0.35);
-        border: none;
-        color: #fff;
-        cursor: pointer;
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    background: rgba(0, 0, 0, 0.35);
+    border: none;
+    color: #fff;
+    cursor: pointer;
 
-        /* Bigger touch target */
-        padding: 1.2rem; /* increase clickable area */
-        width: 3.5rem; /* ensure a minimum hitbox size */
-        height: 3.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    /* Bigger touch target */
+    padding: 1.2rem; /* increase clickable area */
+    width: 3.5rem; /* ensure a minimum hitbox size */
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        border-radius: 50%; /* optional: nicer look */
-        touch-action: manipulation;
-      }
+    border-radius: 50%; /* optional: nicer look */
+    touch-action: manipulation;
+}
 
-      .nav.prev {
-        left: 20px;
-      }
-      .nav.next {
-        right: 20px;
-      }
+.nav.prev {
+    left: 20px;
+}
+.nav.next {
+    right: 20px;
+}

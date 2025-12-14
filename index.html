@@ -1,133 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed Awad Photography</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/theme-dark.css" />
-    <script src="js/gallery.js" defer></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ahmed Awad Photography</title>
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/theme-dark.css" />
+        <script src="js/gallery.js" defer></script>
+    </head>
 
-  <body>
-    <h1>Ahmed Abu Awad<br />Photography</h1>
+    <body>
+        <h1>Ahmed Abu Awad<br />Photography</h1>
 
-    <p class="tagline">
-      Hi, I’m Ahmed. I was born in Gaza 1994. I live as a Brussels-based
-      photographer with a focus on portraits, events, and documentary stories. I
-      love capturing real, unscripted moments and creating images that feel
-      honest and alive.
-    </p>
+        <p class="tagline">
+            Hi, I’m Ahmed. I was born in Gaza 1994. I live as a Brussels-based
+            photographer with a focus on portraits, events, and documentary
+            stories. I love capturing real, unscripted moments and creating
+            images that feel honest and alive.
+        </p>
 
-    <br>
-    <p class="tagline">
-      If you're organising an event or want to preserve a meaningful moment in
-      your life, I’m here to craft images that are genuine, expressive, and true
-      to who you are.
-    </p>
+        <br />
+        <p class="tagline">
+            If you're organising an event or want to preserve a meaningful
+            moment in your life, I’m here to craft images that are genuine,
+            expressive, and true to who you are.
+        </p>
 
-    <main>
-      <!-- PORTRAITS (top 3, own gallery) -->
+        <main>
+            <!-- PORTRAITS (top 3, own gallery) -->
 
-      <section>
-        <h2>Portraits</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-02-e93ae0.webp"
-              class="thumb thumb-portraits"
-              alt="Portrait"
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
-              class="thumb thumb-portraits"
-              alt="Portrait"
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
-              class="thumb thumb-portraits"
-              alt="Portrait"
-            />
-          </div>
+            <section>
+                <h2>Portraits</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-02-e93ae0.webp"
+                            class="thumb thumb-portraits"
+                            alt="Portrait"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-05-26dd48.webp"
+                            class="thumb thumb-portraits"
+                            alt="Portrait"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-05-469f4d.webp"
+                            class="thumb thumb-portraits"
+                            alt="Portrait"
+                        />
+                    </div>
 
-          <!-- CTA AS GRID ITEM -->
-          <div class="grid-item grid-item-cta">
-            <a href="portraits.html" class="btn">More portraits</a>
-          </div>
+                    <!-- CTA AS GRID ITEM -->
+                    <div class="grid-item grid-item-cta">
+                        <a href="portraits.html" class="btn">More portraits</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EVENTS (bottom 3, own gallery, low fetch priority) -->
+            <section>
+                <h2>Events</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-05-9ef7e9.webp"
+                            class="thumb thumb-events"
+                            alt="Event"
+                            fetchpriority="low"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-05-1cf891.webp"
+                            class="thumb thumb-events"
+                            alt="Event"
+                            fetchpriority="low"
+                        />
+                    </div>
+                    <div class="grid-item">
+                        <img
+                            src="https://vjbe.net/img/ahmed/2025-12-05-538caf.webp"
+                            class="thumb thumb-events"
+                            alt="Event"
+                            fetchpriority="low"
+                        />
+                    </div>
+
+                    <!-- CTA AS GRID ITEM -->
+                    <div class="grid-item grid-item-cta">
+                        <a href="events.html" class="btn">More events</a>
+                    </div>
+                </div>
+            </section>
+            <!-- NEW: contact section on the home page -->
+            <section id="contact" style="text-align: center">
+                <h2>Get in touch</h2>
+
+                <p>
+                    E-mail:
+                    <a href="mailto:ahmedabuawad94@gmail.com"
+                        >ahmedabuawad94@gmail.com</a
+                    >
+                </p>
+
+                <p>
+                    tel:
+                    <a href="tel:+32466209361">+32 466 20 93 61</a>
+                </p>
+
+                <p>
+                    Instagram:
+                    <a
+                        href="https://www.instagram.com/ahmedawad.shot/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >@ahmedawad.shot</a
+                    >
+                </p>
+            </section>
+        </main>
+
+        <!-- MODAL (reused for both galleries) -->
+        <div class="modal" id="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <button class="nav prev" id="prevBtn">&#10094;</button>
+            <img id="modalImg" />
+            <button class="nav next" id="nextBtn">&#10095;</button>
         </div>
-      </section>
-
-      <!-- EVENTS (bottom 3, own gallery, low fetch priority) -->
-      <section>
-        <h2>Events</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-05-9ef7e9.webp"
-              class="thumb thumb-events"
-              alt="Event"
-              fetchpriority="low"
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-05-1cf891.webp"
-              class="thumb thumb-events"
-              alt="Event"
-              fetchpriority="low"
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              src="https://vjbe.net/img/ahmed/2025-12-05-538caf.webp"
-              class="thumb thumb-events"
-              alt="Event"
-              fetchpriority="low"
-            />
-          </div>
-
-          <!-- CTA AS GRID ITEM -->
-          <div class="grid-item grid-item-cta">
-            <a href="events.html" class="btn">More events</a>
-          </div>
-        </div>
-      </section>
-      <!-- NEW: contact section on the home page -->
-      <section id="contact">
-        <h2>Get in touch</h2>
-
-        <p>
-          E-Mail:
-          <a href="mailto:ahmedabuawad94@gmail.com">ahmedabuawad94@gmail.com</a>
-        </p>
-
-        <p>
-          Phone number:
-          <a href="tel:+32466209361">+32 466 20 93 61</a>
-        </p>
-
-        <p>
-          Instagram:
-          <a
-            href="https://www.instagram.com/sniper.shoots"
-            target="_blank"
-            rel="noopener noreferrer"
-            >@sniper.shoots</a
-          >
-        </p>
-      </section>
-    </main>
-
-    <!-- MODAL (reused for both galleries) -->
-    <div class="modal" id="modal">
-      <span class="close" id="closeModal">&times;</span>
-      <button class="nav prev" id="prevBtn">&#10094;</button>
-      <img id="modalImg" />
-      <button class="nav next" id="nextBtn">&#10095;</button>
-    </div>
-  </body>
+    </body>
 </html>
