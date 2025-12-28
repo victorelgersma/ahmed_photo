@@ -1,0 +1,195 @@
+/* base.css
+   Functional / structural styles: layout, grids, modal behaviour
+*/
+
+/* Basic reset */
+
+/* Make summary look like your existing .btn */
+.contact-details > summary {
+    list-style: none; /* removes default marker in some browsers */
+}
+.contact-details > summary::-webkit-details-marker {
+    display: none; /* removes default marker in Safari/Chrome */
+}
+
+/* Small spacing + align */
+.contact-details {
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+}
+
+.contact-content {
+    margin-top: 1rem;
+}
+
+/* Desktop: force contact open and hide the button */
+@media (min-width: 900px) {
+    .contact-details {
+        text-align: center; /* or left if you prefer */
+    }
+
+    .contact-details > summary {
+        display: none;
+    }
+
+    .contact-details .contact-content {
+        margin-top: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Layout containers */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    margin-top: 3rem;
+}
+
+/* Headings & text wrappers (layout only) */
+h1 {
+    text-align: center;
+}
+
+.tagline {
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* Image grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.45rem;
+}
+
+.grid-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+/* CTA item lives inside the grid */
+.grid-item-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* On mobile (2 columns): behaves like a normal tile (4th item in 2x2) */
+/* No extra rules needed here: it just uses the existing aspect-ratio */
+
+/* On wider screens: make the CTA span full width under the row */
+@media (min-width: 901px) {
+    .grid-item-cta {
+        grid-column: 1 / -1; /* span all three columns */
+        aspect-ratio: auto; /* let height be based on content */
+        padding: 0.7rem 0; /* give it some breathing room */
+    }
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Contact section layout */
+#contact {
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+#contact p {
+    margin: 0.25rem 0;
+}
+
+/* Modal mechanics */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.open {
+    display: flex; /* shown when JS adds .open */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal .close {
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Navigation arrows */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1.2rem; /* increase clickable area */
+    width: 3.5rem; /* ensure a minimum hitbox size */
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%; /* optional: nicer look */
+    touch-action: manipulation;
+}
+
+.nav.prev {
+    left: 24px;
+}
+
+.nav.next {
+    right: 24px;
+}
+
+/* Responsive behaviour */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 1rem;
+    }
+}
