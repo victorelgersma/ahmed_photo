@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ahmed Awad Photography</title>
-        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/basev2.css" />
         <link rel="stylesheet" href="css/theme-dark.css" />
         <script src="js/gallery.js" defer></script>
     </head>
@@ -53,11 +53,9 @@
                             alt="Portrait"
                         />
                     </div>
-
-                    <!-- CTA AS GRID ITEM -->
-                    <div class="grid-item grid-item-cta">
-                        <a href="portraits.html" class="btn">More portraits</a>
-                    </div>
+                </div>
+                <div class="more-button">
+                    <a href="portraits.html" class="btn">More portraits</a>
                 </div>
             </section>
 
@@ -89,11 +87,10 @@
                             fetchpriority="low"
                         />
                     </div>
-
-                    <!-- CTA AS GRID ITEM -->
-                    <div class="grid-item grid-item-cta">
-                        <a href="events.html" class="btn">More events</a>
-                    </div>
+                </div>
+                <!-- CTA AS GRID ITEM -->
+                <div class="more-button">
+                    <a href="events.html" class="btn">More events</a>
                 </div>
             </section>
             <!-- NEW: contact section on the home page -->
@@ -132,4 +129,15 @@
             <button class="nav next" id="nextBtn">&#10095;</button>
         </div>
     </body>
+
+    <style>
+        .more-button {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+        }
+    </style>
 </html>

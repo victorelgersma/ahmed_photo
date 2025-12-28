@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 body {
     margin: 0;
     font-family:
