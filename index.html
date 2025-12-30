@@ -4,31 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ahmed Awad Photography</title>
-        <link rel="stylesheet" href="css/basev2.css" />
-        <link rel="stylesheet" href="css/theme-dark.css" />
+        <link rel="stylesheet" href="css/basev3.css" />
+        <link rel="stylesheet" href="css/theme-dark2.css" />
+        <link rel="stylesheet" href="css/galleryv3.css" />
         <script src="js/gallery.js" defer></script>
     </head>
 
     <body>
-        <h1>Ahmed Abu Awad<br />Photography</h1>
-
-        <p class="tagline">
-            Hi, I’m Ahmed. I was born in Gaza 1994. I live as a Brussels-based
-            photographer with a focus on portraits, events, and documentary
-            stories. I love capturing real, unscripted moments and creating
-            images that feel honest and alive.
-        </p>
-
-        <br />
-        <p class="tagline">
-            If you're organising an event or want to preserve a meaningful
-            moment in your life, I’m here to craft images that are genuine,
-            expressive, and true to who you are.
-        </p>
-
+        <header
+            style="display: flex; justify-content: center; align-items: center"
+        >
+            <div>
+                <h1>Ahmed Abu Awad<br />Photography</h1>
+                <nav style="padding: 0">
+                    <ul style="">
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main>
-            <!-- PORTRAITS (top 3, own gallery) -->
-
             <section>
                 <h2>Portraits</h2>
                 <div class="grid">
@@ -55,11 +51,10 @@
                     </div>
                 </div>
                 <div class="more-button">
-                    <a href="portraits.html" class="btn">More portraits</a>
+                    <a href="portraits" class="btn">More portraits</a>
                 </div>
             </section>
 
-            <!-- EVENTS (bottom 3, own gallery, low fetch priority) -->
             <section>
                 <h2>Events</h2>
                 <div class="grid">
@@ -88,36 +83,9 @@
                         />
                     </div>
                 </div>
-                <!-- CTA AS GRID ITEM -->
                 <div class="more-button">
-                    <a href="events.html" class="btn">More events</a>
+                    <a href="events" class="btn">More events</a>
                 </div>
-            </section>
-            <!-- NEW: contact section on the home page -->
-            <section id="contact" style="text-align: center">
-                <h2>Get in touch</h2>
-
-                <p>
-                    E-mail:
-                    <a href="mailto:ahmedabuawad94@gmail.com"
-                        >ahmedabuawad94@gmail.com</a
-                    >
-                </p>
-
-                <p>
-                    tel:
-                    <a href="tel:+32466209361">+32 466 20 93 61</a>
-                </p>
-
-                <p>
-                    Instagram:
-                    <a
-                        href="https://www.instagram.com/ahmedawad.shot/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >@ahmedawad.shot</a
-                    >
-                </p>
             </section>
         </main>
 
@@ -138,6 +106,23 @@
             justify-content: center;
             align-items: center;
             margin-top: 1em;
+        }
+        a {
+            text-decoration: none;
+            color: var(--text);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav > ul {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            list-style: none;
+            text-decoration: none;
+            color: var(--text);
         }
     </style>
 </html>
