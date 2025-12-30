@@ -52,8 +52,8 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.2rem;
 }
 
 .grid-item {
@@ -116,7 +116,6 @@ main {
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%; /* optional: nicer look */
     touch-action: manipulation;
 }
 
